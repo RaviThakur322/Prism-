@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRISM</title>
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.html"> 
+    <link href="logo.png" rel="icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #customers {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      
+       overflow:scroll;
+    }
+    
+    #customers td, #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customers tr:hover {background-color: #ddd;}
+    
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4CAF50;
+      color: white;
+    }
+    
+    .responsivet {
+      width: 100%;
+      height: auto;
+    }
+    .btn-wid {
+        width: 200px;
+        margin-left: 0;
+    }
+    
+    .g-6,
+    .gx-6 {
+      --bs-gutter-x: 4.5rem;
+    }
+    .g-6,
+    .gy-6 {
+      --bs-gutter-y: 4.5rem;
+    }
+    @media (min-width: 576px) {
+      .g-sm-6,
+      .gx-sm-6 {
+        --bs-gutter-x: 4.5rem;
+      }
+      .g-sm-6,
+      .gy-sm-6 {
+        --bs-gutter-y: 4.5rem;
+      }
+    }
+    @media (min-width: 768px) {
+      .g-md-6,
+      .gx-md-6 {
+        --bs-gutter-x: 4.5rem;
+      }
+      .g-md-6,
+      .gy-md-6 {
+        --bs-gutter-y: 4.5rem;
+      }
+    }
+    @media (min-width: 992px) {
+      .g-lg-6,
+      .gx-lg-6 {
+        --bs-gutter-x: 4.5rem;
+      }
+      .g-lg-6,
+      .gy-lg-6 {
+        --bs-gutter-y: 4.5rem;
+      }
+    }
+    @media (min-width: 1200px) {
+      .g-xl-6,
+      .gx-xl-6 {
+        --bs-gutter-x: 4.5rem;
+      }
+      .g-xl-6,
+      .gy-xl-6 {
+        --bs-gutter-y: 4.5rem;
+      }
+    }
+    @media (min-width: 1400px) {
+      .g-xxl-6,
+      .gx-xxl-6 {
+        --bs-gutter-x: 4.5rem;
+      }
+      .g-xxl-6,
+      .gy-xxl-6 {
+        --bs-gutter-y: 4.5rem;
+      }
+    }
+    .mb-6 {
+      margin-bottom: 4.5rem !important;
+    }
+    .py-6 {
+      padding-top: 4.5rem !important;
+      padding-bottom: 4.5rem !important;
+    }
+    @media (min-width: 576px) {
+      .mb-sm-6 {
+        margin-bottom: 4.5rem !important;
+      }
+      .py-sm-6 {
+        padding-top: 4.5rem !important;
+        padding-bottom: 4.5rem !important;
+      }
+    }
+    @media (min-width: 768px) {
+      .mb-md-6 {
+        margin-bottom: 4.5rem !important;
+      }
+      .py-md-6 {
+        padding-top: 4.5rem !important;
+        padding-bottom: 4.5rem !important;
+      }
+    }
+    @media (min-width: 992px) {
+      .mb-lg-6 {
+        margin-bottom: 4.5rem !important;
+      }
+      .py-lg-6 {
+        padding-top: 4.5rem !important;
+        padding-bottom: 4.5rem !important;
+      }
+    }
+    @media (min-width: 1200px) {
+      .mb-xl-6 {
+        margin-bottom: 4.5rem !important;
+      }
+      .py-xl-6 {
+        padding-top: 4.5rem !important;
+        padding-bottom: 4.5rem !important;
+      }
+    }
+    @media (min-width: 1400px) {
+      .mb-xxl-6 {
+        margin-bottom: 4.5rem !important;
+      }
+      .py-xxl-6 {
+        padding-top: 4.5rem !important;
+        padding-bottom: 4.5rem !important;
+      }
+    }
+    .col-md-3 {
+        
+        
+        flex: 0 0 20%;
+      }
+    
+    </style>
+</head>
+<body>
+
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+       <a href="index.html" class="logo mr-auto"><img src="logo.png" alt="" class="img-fluid">PRISM 2026</a>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          
+          <li><a href="#team">Organising Committee</a></li>
+         
+		  <li><a href="#register">Register Here </a></li>
+          <li><a href="#contact">Contact Us</a></li>
+		 <!--<li><a href="payment.html">Pay Now  <img src="photo/imp.jpg" width="20px"></a></li>-->
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  
+  
+  
+	 <!-- ======= Cta Section ======= -->
+   <section  style="background: #dedede;
+   padding-top: 120px;" id="cta2" class="ctaNN">
+     <div class="container">
+       <div class="text-center">
+         <h3>Paper Submission Guidelines and Plagiarism Policy</h3>
+         
+     
+   
+   <div class="row">
+   <div class="col-md-12">
+   <ul>
+ 
+<li><i class="bx bx-check-double"></i> Submitted papers must comply with plagiarism policy and procedures i.e. plagiarism must not be more than 15% in the paper and not more than 1% from a single source.</li>
+<li><i class="bx bx-check-double"></i> Only papers having genuine content with original research results will be considered for publication.</li>
+<li><i class="bx bx-check-double"></i> Papers submitted to HCICC - 25 must not have been published elsewhere and must not be under review or submitted for review elsewhere while under consideration for HCICC - 25.</li>
+<li><i class="bx bx-check-double"></i> HCICC - 25 technical programme committee will look for all ethical standards in the best possible way; further authors will be responsible for any plagiarism claims.</li>
+<li><i class="bx bx-check-double"></i> Kindly make sure the paper will be as per Springer guidelines. Please go through the instructions and springer format:<a href="https://www.springer.com/gp/authors-editors/book-authors-editors/your-publication-journey/manuscript-preparation">https://www.springer.com/gp/authors-editors/book-authors-editors/your-publication-journey/manuscript-preparation</a></li>
+
+
+   </ul>
+        
+       </div>
+     </div>
+   </section><!-- End Cta Section -->
